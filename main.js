@@ -63,7 +63,7 @@ function confirm() {
     //window.location.reload();
   } else {
     confirmPasswordMessage.textContent =
-      "🛈Password do not match, please try again";
+      "🛈Password does not match, please try again";
     confirmPasswordMessage.style.color = "red";
     confirmPassword.style.borderColor = "red";
 
