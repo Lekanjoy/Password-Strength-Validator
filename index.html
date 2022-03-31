@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-strength Validator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="key_lock.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+       <!--  <p class="instruction">
+                &#10071 Password must contain atleast an Uppercase,<br> a number and a symbol
+                </p> -->
+        <div class="input-box">
+                   <input type="password" placeholder="Enter Password" 
+                   class="password" id="password" autofocus oninput="password()">
+             <label for="checkbox" class="label">
+                  <img class="eye" src="eye_password.png" alt="">
+            </label>
+            <legend id="msg"></legend>
+                  <input type="checkbox" id="checkbox" onclick="showPassword()">
+                  <input type="password " id="confirm"
+                   placeholder="Confirm Password"  oninput="confirm()">
+                 <input type="checkbox" id="confirmP" onclick="conPassword()">
+           <label for="confirmP" >
+                <img class="eye2" src="eye_password.png" alt="">
+           </label>
+          <!--  <input type="submit" class="sub" id="sub" > -->
+                <p id="message">Your Password is <span id="strength"></span></p>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
