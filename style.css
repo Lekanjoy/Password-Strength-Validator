@@ -1,0 +1,117 @@
+:root {
+  --bgc1: #ebebeb;
+  --bgc2: #ecf0f3;
+  --bgc3:#cad2c5;
+   --bgc4:#52489c;
+    --bgc5:#84a98c;
+     --bgc6:#f88ab0;
+  --bg-button: rgb(7, 128, 7);
+  --brad-button: 5px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bgc3);
+}
+.input-box {
+  width: 23rem;
+  height: 22rem;
+  background-color: var(--bgc2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 14px 8px 8px #b8b3b3;
+  flex-direction: column;
+  cursor: pointer;
+}
+#message {
+  position: relative;
+  top: -21px;
+  left: -2px;
+  text-align: left;
+  width: 20rem;
+  font-size: 15px;
+  display: none;
+}
+.instruction {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgb(175, 34, 60);
+  list-style: none;
+  /* background-color: var(--bgc1) */
+  padding: 6px 15px;
+  border-radius: 0 25px 25px 35px;
+}
+#confirm {
+  padding: 1em 2.5em;
+  outline: none;
+  border: 2px solid #aba5a5;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.password {
+  padding: 1em 2.5em;
+  outline: none;
+  border: 2px solid #aba5a5;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#checkbox,
+#confirmP {
+  position: absolute;
+  display: none;
+}
+.eye {
+  width: 20px;
+  cursor: pointer;
+  position: relative;
+  top: -41px;
+  left: 125px;
+  user-select: none;
+  -webkit-user-drag: none;
+  opacity: 0.5;
+}
+.eye2 {
+  width: 20px;
+  cursor: pointer;
+  position: relative;
+  top: -43px;
+  left: 125px;
+  user-select: none;
+  opacity: 0.5;
+  -webkit-user-drag: none;
+}
+#msg {
+  font-size: 12px;
+  color: red;
+  display: block;
+  position: relative;
+  top: 19px;
+  right: 22px;
+}
+.sub {
+  outline: none;
+  padding: 8px 17px;
+  background-color: var(--bg-button);
+  color: white;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: var(--brad-button);
+  margin-bottom: 35px;
+  /*  width: 87%; */
+}
